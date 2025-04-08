@@ -1,0 +1,15 @@
+{
+    "version": "1.0",
+    "services": {
+        "web": {
+            "image": "getmeili/meilisearch:v1.13",
+            "port": 7700,
+            "volumes": [
+                {
+                    "name": "meili_data",
+                    "destinationPath": "/meili_data"
+                }
+            ]
+        }
+    }
+}
